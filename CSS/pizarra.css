@@ -1,6 +1,6 @@
 .pizzarra {
     display: grid;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 30px;
     border: 1px solid #2778bf;
     padding: 20px;

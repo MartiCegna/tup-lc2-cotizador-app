@@ -7,197 +7,225 @@
     <title>Cotizador</title>
     <link rel="icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="css/informes.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    
     <!-- Modal Datos del destinatario -->
     <div class="contenedorModal">
-        <div class="modalEnviarDatos">
-          <h2>DATOS DEL DESTINATARIO</h2>
-          <form class="formDatos">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <div class="btns">
-              <button class="btnCancelar">Cancelar</button>
-              <button class="btnEnviar">Enviar</button>
-            </div>
-          </form>
-        </div>
+      <div class="modalEnviarDatos">
+        <h2>DATOS DEL DESTINATARIO</h2>
+        <form class="formDatos">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+          <div class="btns">
+            <button class="btnCancelar">Cancelar</button>
+            <button class="btnEnviar">Enviar</button>
+          </div>
+        </form>
       </div>
-      <!-- Modal Datos del destinatario -->
+    </div>
+    <!-- Modal Datos del destinatario -->
 
     <header>
-        <h1><i class="fa-solid fa-coins"></i>Cotizador de Monedas</h1>
+      <h1><i class="fa-solid fa-coins"></i>Cotizador de Monedas</h1>
     </header>
     <section class="migas_de_pan">
-        <p><b>Usted esta parado en:</b> <a class="volverInicio" href="/index.html">Inicio</a> / Informes
+      <p>
+        <b>Usted esta parado en:</b>
+        <a class="volverInicio" href="/index.html">Inicio</a> / Informes
+      </p>
     </section>
     <div class="contenedor">
-        
-        <main>
-            <div class="Informes">
-                <h1>Informe</h1>
-                <!-- select -->
-                <form class="selector">
-                    <label for="selecMoneda">Seleccione una moneda:</label>
-                    <select name="selecMoneda" id="selecMoneda">
-                        <option value="todas">TODAS</option>
-                        <option value="dolarOficial">Dólar Oficial</option>
-                        <option value="dolarBlue">Dólar Blue</option>
-                        <option value="dolarMEP">Dólar Bolsa(MEP)</option>
-                        <option value="dolarCCL">Dólar Contado con Liqui(CCL)</option>
-                        <option value="dolarTarjeta">Dólar Tarjeta</option>
-                        <option value="dolarMayorista">Dólar Mayorista</option>
-                        <option value="dolarCripto">Dólar Cripto</option>
-                        <option value="euro">Euro</option>
-                        <option value="realBrasil">Real Brasileño</option>
-                        <option value="pesoChileno">Peso Chileno</option>
-                        <option value="pesoUruguayo">Peso Uruguayo</option>
-                    </select>
-                    <button type="button"><i class="fa-solid fa-filter"></i></button>
-                </form>
-                <!-- select -->
-                <a href="#compartir-info" class="compartirInfo">
-                    <i class="fa-solid fa-envelope-open-text">
-                    </i> Compartir Información</a>
-                
-                <!-- imagen de grafico -->
-                <div class="grafico">
-                    <img
-                        src="/img/grafico.jpg"
-                        width="100%"
-                        height="80%"
-                        alt="Imagen de el grafico"/>
-                </div>
-                <!-- imagen de grafico -->
+      <main>
+        <div class="informes">
+          <h1>Informe</h1>
+          <!-- select -->
+          <form class="selector">
+            <label for="selecMoneda">Seleccione una moneda:</label>
+            <select name="selecMoneda" id="selecMoneda">
+              <option value="todas">Todas</option>
+              <option value="dolarOficial">Dólar Oficial</option>
+              <option value="dolarBlue">Dólar Blue</option>
+              <option value="dolarMEP">Dólar Bolsa(MEP)</option>
+              <option value="dolarCCL">Dólar Contado con Liqui(CCL)</option>
+              <option value="dolarTarjeta">Dólar Tarjeta</option>
+              <option value="dolarMayorista">Dólar Mayorista</option>
+              <option value="dolarCripto">Dólar Cripto</option>
+              <option value="euro">Euro</option>
+              <option value="realBrasil">Real Brasileño</option>
+              <option value="pesoChileno">Peso Chileno</option>
+              <option value="pesoUruguayo">Peso Uruguayo</option>
+            </select>
+            <button type="button" class="filtrar">
+              <i class="fa-solid fa-filter"></i>
+            </button>
+          </form>
 
-                <div class="contenedorTabla">
-                    <table class="tabla">
-                      <thead>
-                        <tr>
-                          <th class="tituloTabla">MONEDA</th>
-                          <th class="tituloTabla">FECHA</th>
-                          <th class="tituloTabla">COMPRA</th>
-                          <th class="tituloTabla">VENTA</th>
-                          <th class="tituloTabla">VARIACIÓN</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td rowspan="5">Dólar Blue</td>
-                          <td>15/04/2024</td>
-                          <td>$995</td>
-                          <td>$1015</td>
-                          <td>
-                            <i class="fa-solid fa-arrow-down"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>14/04/2024</td>
-                          <td>$996.09</td>
-                          <td>$1000.06</td>
-                          <td>
-                            <i class="fa-solid fa-arrow-up"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>13/04/2024</td>
-                          <td>$1355.2</td>
-                          <td>$1419.2</td>
-                          <td>
-                            <i class="fa-solid fa-arrow-down"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>12/04/2024</td>
-                          <td>$1050</td>
-                          <td>$1086</td>
-                          <td>
-                            <i class="fa-solid fa-arrow-up"></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>11/04/2024</td>
-                          <td>$1000</td>
-                          <td>$1200</td>
-                          <td>
-                            <i class="fa-solid fa-arrow-up"></i>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </main>
+          <!-- select -->
 
-        </main>
-        <section class="side-bar">
-            <div class="side-bar-links">
-                <ul>
-                    <li>
-                        <a href="/index.html"><i class="fa-solid fa-house"></i>Inicio</a>
-                    </li>
-                    <li>
-                        <a href="/miarchivo.html"><i class="fa-solid fa-folder"></i>Mi Archivo</a>
-                    </li>
-                    <li>
-                        <a href="/informes.html"><i class="fa-solid fa-file"></i>Informes</a>
-                    </li>
-                    <li>
-                        <a href="/contacto.html"><i class="fa-solid fa-address-book"></i>Contáctenos</a>
-                    </li>
-                </ul>
-            </div>
+          <a href="#compartir-info" class="compartirInfo"
+            ><i class="fa-solid fa-envelope-open-text"></i> Compartir
+            Información</a
+          >
 
+          <!-- imagen de grafico -->
+          <div class="grafico">
+            <img
+              src="/img/grafico.jpg"
+              width="100%"
+              height="80%"
+              alt="Imagen de el grafico"
+            />
+          </div>
+          <!-- imagen de grafico -->
+          <div class="contenedorTabla">
+            <table class="tabla">
+              <thead>
+                <tr>
+                  <th class="tituloTabla">MONEDA</th>
+                  <th class="tituloTabla">FECHA</th>
+                  <th class="tituloTabla">COMPRA</th>
+                  <th class="tituloTabla">VENTA</th>
+                  <th class="tituloTabla">VARIACIÓN</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="5">Dólar Blue</td>
+                  <td>15/04/2024</td>
+                  <td>$995</td>
+                  <td>$1015</td>
+                  <td>
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>14/04/2024</td>
+                  <td>$996.09</td>
+                  <td>$1000.06</td>
+                  <td>
+                    <i class="fa-solid fa-arrow-up"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13/04/2024</td>
+                  <td>$1355.2</td>
+                  <td>$1419.2</td>
+                  <td>
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12/04/2024</td>
+                  <td>$1050</td>
+                  <td>$1086</td>
+                  <td>
+                    <i class="fa-solid fa-arrow-up"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11/04/2024</td>
+                  <td>$1000</td>
+                  <td>$1200</td>
+                  <td>
+                    <i class="fa-solid fa-arrow-up"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+      <section class="side-bar">
+        <div class="side-bar-links">
+          <ul>
+            <li>
+              <a href="/index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            </li>
+            <li>
+              <a href="/miarchivo.html"
+                ><i class="fa-solid fa-folder"></i>Mi Archivo</a
+              >
+            </li>
+            <li>
+              <a href="/informes.html"
+                ><i class="fa-solid fa-file"></i>Informes</a
+              >
+            </li>
+            <li>
+              <a href="/contacto.html"
+                ><i class="fa-solid fa-address-book"></i>Contáctenos</a
+              >
+            </li>
+          </ul>
+        </div>
             <div class="comentarios">
                 <div class="comentario">
-                    <img src="img/user1.jpg" alt="foto del usuario" class="user-icon" />
-                    <div class="texto">
-                        <h3>Roger Medina</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in
-                            nobis molestias exercitationem?
-                        </p>
-                    </div>
+                  <img
+                    src="/img/user1.jpg"
+                    alt="foto del usuario"
+                    class="user-icon"
+                  />
+                  <div class="texto">
+                    <h3>Roger Medina</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                      in nobis molestias exercitationem?
+                    </p>
+                  </div>
                 </div>
                 <div class="comentario">
-                    <img src="img/user2.jpg" alt="foto del usuario" class="user-icon" />
-                    <div class="texto">
-                        <h3>Ariana Perez</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in
-                            nobis molestias exercitationem?
-                        </p>
-                    </div>
+                  <img
+                    src="/img/user2.jpg"
+                    alt="foto del usuario"
+                    class="user-icon"
+                  />
+                  <div class="texto">
+                    <h3>Martina Martis</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                      in nobis molestias exercitationem?
+                    </p>
+                  </div>
                 </div>
                 <div class="comentario">
-                    <img src="img/user3.jpg" alt="foto del usuario" class="user-icon" />
-                    <div class="texto">
-                        <h3>Valerio Grosso</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in
-                            nobis molestias exercitationem? 
-                        </p>
-                    </div>
+                  <img
+                    src="/img/user3.jpg"
+                    alt="foto del usuario"
+                    class="user-icon"
+                  />
+                  <div class="texto">
+                    <h3>Santiago Tell</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                      in nobis molestias exercitationem?
+                    </p>
+                  </div>
                 </div>
                 <div class="comentario">
-                    <img src="img/user4.avif" alt="foto del usuario" class="user-icon" />
-                    <div class="texto">
-                        <h3>Francisco Giacometti</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in
-                            nobis molestias exercitationem? 
-                        </p>
-                    </div>
+                  <img
+                    src="/img/user4.avif"
+                    alt="foto del usuario"
+                    class="user-icon"
+                  />
+                  <div class="texto">
+                    <h3>Framcisco Giacometti</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                      in nobis molestias exercitationem?
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </section>
-    </div>
+              </div>
+            </section>
+          </div>
     <footer>
         <section class="institucional">
             <div>

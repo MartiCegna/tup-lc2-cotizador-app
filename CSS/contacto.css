@@ -1,168 +1,415 @@
 .flexContacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contenedorContacto {
-    background-color: #ffffff;
-    border-radius: 30px;
-    border: 1px solid #2778bf;
-    padding: 20px;
-    font-size: 15px;
-    display: grid;
-    grid-template-areas:
-      "h1 h1"
-      "formContacto sugerencia"
-      "formContacto cajaDatos";
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid #2778bf;
+  padding: 20px;
+  font-size: 15px;
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "formContacto sugerencia"
+    "formContacto cajaDatos";
 }
-  
+
 h1 {
-    grid-area: h1;
-    text-align: center;
+  grid-area: h1;
+  text-align: center;
 }
-  
+
 .datosDeContacto {
-    grid-area: formContacto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  grid-area: formContacto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
-  
+
 .formContacto {
-    width: 80%;
-    background-color: #f3f3f3;
-    border: 1px solid #dfdfdf;
-    border-radius: 25px 50px;
-    padding: 20px;
-    margin-top: 20px;
+  width: 80%;
+  background-color: #f3f3f3;
+  border: 1px solid #dfdfdf;
+  border-radius: 25px 50px;
+  padding: 20px;
+  margin-top: 20px;
 }
-  
+
 .campoEntrada {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 80%;
 }
-  
+
 #campoNombre,
 #campoEmail {
-    align-items: center;
+  align-items: center;
 }
-  
-.formContacto input, textarea {
-    padding: 10px;
-    width: 70%;
-    border-radius: 5px;
-    border: 1px solid #929292;
-    margin: 10px 0;
+
+.formContacto input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #929292;
+  margin: 10px 0;
 }
-  
+
+.formContacto textarea {
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #929292;
+  margin-bottom: 10px;
+}
+
 .btns {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
 }
-  
+
 .sugerencia {
-    grid-area: sugerencia;
-    width: 100%;
-    margin-top: 20px;
+  grid-area: sugerencia;
+  width: 100%;
+  margin-top: 20px;
 }
-  
+
 .sugerencia p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-  
+
 .contenedorCajaDatos {
-    grid-area: cajaDatos;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: cajaDatos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
 .cajaDatos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 150px;
-    background-color: #ffffff;
-    border: 1px solid #929292;
-    border-radius: 20px;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 150px;
+  background-color: #ffffff;
+  border: 1px solid #929292;
+  border-radius: 20px;
+  padding: 20px;
 }
-  
+
 .dato {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: column;
 }
-  
+
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
-.logo img{
-    width: 150px;
+
+.logo img {
+  width: 150px;
 }
-  
+
 /*----------------- ALERTAS ------------------*/
-  
+
 .contenedorSuccess {
-    display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 100;
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
 }
-  
+
 .cajaSuccess {
-    background-color: #28a745d8;
-    padding: 20px 40px;
-    border-radius: 30px;
-    color: #fff;
+  background-color: #28a745d8;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: #fff;
 }
-  
+
 .contenedorWarning {
-    display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 100;
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
 }
-  
+
 .cajaWarning {
-    background-color: #ffc107d8;
-    padding: 20px 40px;
-    border-radius: 30px;
+  background-color: #ffc107d8;
+  padding: 20px 40px;
+  border-radius: 30px;
 }
-  
+
 .contenedorError {
-    display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 100;
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
 }
 
 .cajaError {
-    background-color: #dc3545d8;
-    padding: 20px 40px;
-    border-radius: 30px;
-    color: #fff;
- }
-  
+  background-color: #dc3545d8;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: #fff;
+}
+
 /*----------------- MEDIA ------------------*/
-  
-/* @media screen and (max-width: 1024px) {
-    .logo img {
-      width: 50%;
-    }
-} */
+
+@media screen and (max-width: 1880px) {
+  .campoEntrada label {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .formContacto h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .formContacto input {
+    padding: 5px;
+  }
+
+  .formContacto textarea {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .sugerencia {
+    font-size: 12px;
+  }
+
+  .formContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .dato h2 {
+    font-size: 18px;
+  }
+
+  .dato p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .btns {
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .dato h2 {
+    font-size: 15px;
+  }
+
+  .dato p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  .logo img {
+    width: 100px;
+  }
+
+  .contenedorCajaDatos {
+    align-items: flex-start;
+  }
+
+  .cajaDatos {
+    height: 90px;
+  }
+
+  .sugerencia {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .sugerencia p {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .logo img {
+    width: 70px;
+  }
+
+  .cajaSuccess {
+    font-size: 12px;
+  }
+
+  .cajaWarning {
+    font-size: 12px;
+  }
+
+  .cajaError {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1185px) {
+  .dato h2 {
+    font-size: 12px;
+  }
+
+  .dato p {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .contenedorContacto h1 {
+    font-size: 25px;
+  }
+
+  .formContacto h2 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .contenedorContacto {
+    grid-template-areas:
+      "h1"
+      "formContacto"
+      "sugerencia"
+      "cajaDatos";
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .cajaDatos {
+    width: 70%;
+    height: 90px;
+  }
+
+  .dato h2 {
+    font-size: 18px;
+  }
+
+  .dato p {
+    font-size: 12px;
+  }
+
+  .sugerencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sugerencia p {
+    text-align: center;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .logo img {
+    width: 90px;
+  }
+
+  .cajaDatos {
+    width: 80%;
+    height: 90px;
+  }
+
+  .dato h2 {
+    font-size: 15px;
+  }
+
+  .dato p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .dato h2 {
+    font-size: 12px;
+  }
+
+  .dato p {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 100px;
+  }
+
+  .dato h2 {
+    font-size: 18px;
+  }
+
+  .dato p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .contenedorContacto h1 {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .dato h2 {
+    font-size: 15px;
+  }
+
+  .dato p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .dato h2 {
+    font-size: 12px;
+  }
+
+  .dato p {
+    font-size: 8px;
+  }
+}

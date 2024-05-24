@@ -20,7 +20,7 @@
     "recordatorio"
     "biblio";
 }
-  
+
 .pizzarra h1 {
   grid-area: h1;
   text-align: center;
@@ -33,7 +33,7 @@
   align-items: center;
   width: auto;
 }
-  
+
 .selector {
   grid-area: selector;
   display: flex;
@@ -45,11 +45,11 @@
   border-radius: 10px;
   padding: 10px;
 }
-  
+
 .selector label {
   font-size: 15px;
 }
-  
+
 .selector select {
   background-color: #ffffff;
   border: 1px solid #dfdfdf;
@@ -57,24 +57,24 @@
   margin-right: 20px;
   width: 100%;
 }
-  
+
 .filtrar {
   font-size: 30px;
   border: none;
   background-color: transparent;
 }
-  
+
 .fa-filter {
   cursor: pointer;
   color: #ffb555;
 }
-  
+
 .datosActualizados {
   grid-area: datosActualizados;
   text-align: right;
   padding: 5px 60px 5px 0;
 }
-  
+
 .cotizaciones {
   grid-area: cotizaciones;
   background-color: #f3f3f3;
@@ -93,7 +93,7 @@
   width: 50%;
   min-width: 300px;
 }
-  
+
 .moneda {
   display: flex;
   justify-content: space-between;
@@ -104,63 +104,63 @@
   padding: 10px;
   box-shadow: 0px 0px 15px -3px #00000030;
 }
-  
+
 .botonFavorito {
   font-size: 30px;
   border: none;
   background-color: transparent;
 }
-  
+
 .fa-star {
   color: #c7e0ff;
   cursor: pointer;
 }
-  
+
 .pintada {
   color: #2778bf;
 }
-  
+
 .botonFavorito:hover {
   background-color: transparent;
 }
-  
+
 .botonFavorito:active {
   background-color: transparent;
 }
-  
+
 .compraventa {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 40%;
 }
-  
+
 .compra,
 .venta {
   text-align: center;
 }
-  
+
 .recordatorio {
   grid-area: recordatorio;
   padding: 5px 0 10px 0;
 }
-  
+
 .recordatorio strong {
   font-size: 25px;
 }
-  
+
 .bibliografia {
   grid-area: biblio;
   display: flex;
   width: 100%;
   justify-content: end;
 }
-  
+
 .bibliografia p {
   padding: 6px 3px;
   background-color: #dfdfdf;
 }
-  
+
 .bibliografia a {
   padding: 3px;
   border-radius: 5px;
@@ -168,10 +168,12 @@
   text-decoration: none;
   color: #ffffff;
 }
+
 /*----------------- ALERTAS ------------------*/
 
 .contenedorSuccess {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -186,7 +188,8 @@
 }
 
 .contenedorWarning {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -200,7 +203,8 @@
 }
 
 .contenedorError {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -213,46 +217,48 @@
   border-radius: 30px;
   color: #fff;
 }
-  
+
 /*----------------- MEDIA ------------------*/
-  
- @media screen and (max-width: 1730px) {
+
+@media screen and (max-width: 1730px) {
   .cotizaciones {
     align-items: center;
     flex-flow: column nowrap;
     height: auto;
   }
-  
+
   .cotizacion {
     width: 90%;
   }
 }
-  
-@media  screen and (max-width: 1420px) {
+
+@media screen and (max-width: 1420px) {
   .selector {
     width: auto;
   }
-  
+
   .datosActualizados {
     font-size: 12px;
   }
-  
+
   .recordatorio {
     font-size: 12px;
   }
-  
+
   .recordatorio strong {
     font-size: 18px;
   }
-  
+
   .bibliografia p {
-        font-size: 12px;
+    font-size: 12px;
   }
 }
+
 @media screen and (max-width: 1245px) {
   .cajaSuccess {
     font-size: 12px;
   }
+
   .cajaWarning {
     font-size: 12px;
   }
@@ -363,7 +369,7 @@
 }
 
 @media screen and (max-width: 420px) {
-    .pizzarra h1 {
+  .pizzarra h1 {
     font-size: 20px;
   }
 
@@ -371,7 +377,7 @@
     min-width: 200px;
   }
 
-  .compra{
+  .compra {
     margin-right: 5px;
   }
 
@@ -391,7 +397,7 @@
 }
 
 @media screen and (max-width: 410px) {
-    .pizzarra h1 {
+  .pizzarra h1 {
     font-size: 20px;
   }
 

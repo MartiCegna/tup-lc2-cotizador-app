@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500;700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Times New Roman', Times, serif
 }
 
-html{
+html {
   display: flex;
   margin-left: 100px;
   margin-right: 100px;
   flex-direction: column;
 }
 
-body{
+body {
   background-color: beige;
 }
 
 
 /*------------------HEADER-------------------*/
 
-header{
+header {
   padding: 40px;
   background-image: url(/tup-lc2-cotizador-app/img/imagenEncabezado.jpg);
   background-repeat: no-repeat;
@@ -29,20 +29,20 @@ header{
   border-radius: 10px;
 }
 
-header h1{
+header h1 {
   color: antiquewhite;
   text-align: center;
-  font-family: 'Bebas Neue','Times New Roman', Times, serif;
+  font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
   font-size: 50px;
 }
 
-.fa-coins{
+.fa-coins {
   font-size: 50px;
   padding-right: 15px;
   color: #ffd83c;
 }
 
-div.contenedor{
+div.contenedor {
   display: flex;
   min-height: 65.3vh;
 }
@@ -60,8 +60,8 @@ div.contenedor{
   margin: 0px 0 15px 0;
   border-radius: 10px;
   flex-grow: 1;
-  }
-  
+}
+
 .side-bar-links {
   display: flex;
   justify-content: center;
@@ -71,11 +71,11 @@ div.contenedor{
   height: auto;
   padding: 10px;
 }
-  
+
 .side-bar-links ul {
   width: 100%;
 }
-  
+
 .side-bar-links ul li {
   margin: 10px 5px;
   padding: 5px 10px;
@@ -87,15 +87,15 @@ div.contenedor{
   justify-content: space-between;
   list-style: none;
 }
-  
+
 .side-bar-links ul li:hover {
   background-color: #40a0f5;
 }
-  
+
 .side-bar-links ul li:active {
   background-color: #2778bf;
 }
-  
+
 .side-bar-links ul li a {
   font-size: 18px;
   font-weight: bold;
@@ -107,24 +107,27 @@ div.contenedor{
   align-items: center;
   width: 100%;
 }
-  
+
 .side-bar-links ul li:first-child {
   display: inline-block;
   background-color: #ffffff77;
   margin-bottom: 0;
 }
+
 .side-bar-links ul li:first-child:hover {
   width: auto;
   background-color: #82c5ff;
 }
+
 .side-bar-links ul li:first-child:active {
   width: auto;
   background-color: #2778bf;
 }
+
 .fa-house {
   color: #ffd83c;
 }
-  
+
 .fa-house,
 .fa-folder,
 .fa-file,
@@ -132,14 +135,14 @@ div.contenedor{
   padding-right: 15px;
   font-size: 20px;
 }
-  
+
 .comentarios {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-  
+
 .comentario {
   justify-content: center;
   align-items: center;
@@ -150,23 +153,23 @@ div.contenedor{
   border-radius: 30px;
   background-color: #e3f2ff;
 }
-  
+
 .texto {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-  
+
 .texto h3 {
   color: #2778bf;
 }
-  
+
 .user-icon {
   width: 100px;
   border-radius: 50%;
 }
-  
+
 /*------- MAIN --------*/
 .migas_de_pan {
   display: flex;
@@ -174,10 +177,12 @@ div.contenedor{
   margin-top: 10px;
   height: 15px;
 }
+
 .volverInicio {
   color: #2778bf;
   text-decoration: underline;
 }
+
 main {
   background-color: #c7e0ff;
   width: 80px;
@@ -187,7 +192,7 @@ main {
   flex-grow: 3;
   order: 1;
 }
-  
+
 /*-------- FOOTER ---------*/
 footer {
   align-items: center;
@@ -201,36 +206,43 @@ footer {
   grid-template-columns: repeat(4, auto);
   grid-template-areas: "institucional accesos contacto desarrollado" ". tup tup .";
 }
+
 footer li {
   list-style: none;
 }
+
 .footer-link {
   color: black;
 }
-  
+
 .footer-link::before {
   content: ">";
 }
+
 .institucional {
   display: flex;
   justify-content: center;
   grid-area: institucional;
 }
+
 .accesos {
   display: flex;
   justify-content: center;
   grid-area: accesos;
 }
+
 .contacto {
   display: flex;
   justify-content: center;
   grid-area: contacto;
 }
+
 .desarrollado {
   display: flex;
   justify-content: flex-end;
   grid-area: desarrollado;
 }
+
 .tup {
   display: flex;
   justify-content: center;
@@ -250,7 +262,8 @@ footer li {
   margin-top: 20px;
 }
 
-.btnCancelar, .btnLimpiar {
+.btnCancelar,
+.btnLimpiar {
   padding: 5px 20px;
   margin-right: 5px;
   background-color: #929292;
@@ -271,7 +284,7 @@ footer li {
   cursor: pointer;
   text-transform: uppercase;
 }
-  
+
 /*----------------- MEDIA ------------------*/
 @media screen and (max-width: 1880px) {
   .btnCancelar {
@@ -298,9 +311,11 @@ footer li {
     margin-left: 50px;
     margin-right: 50px;
   }
+
   .side-bar {
     font-size: 18px;
   }
+
   .fa-house,
   .fa-folder,
   .fa-file,
@@ -308,19 +323,22 @@ footer li {
     padding-right: 15px;
     font-size: 25px;
   }
+
   .user-icon {
     width: 70px;
   }
 }
-  
+
 @media screen and (max-width: 920px) {
   html {
     margin-left: 0px;
     margin-right: 0px;
   }
+
   .side-bar-links ul li {
     font-size: 10px;
   }
+
   .fa-house,
   .fa-folder,
   .fa-file,
@@ -328,9 +346,11 @@ footer li {
     padding-right: 15px;
     font-size: 15px;
   }
+
   .user-icon {
     width: 50px;
   }
+
   .migas_de_pan {
     margin-right: 10px;
   }
@@ -343,6 +363,7 @@ footer li {
     font-size: 15px;
   }
 }
+
 @media screen and (max-width: 770px) {
   .migas_de_pan {
     font-size: 15px;
@@ -369,13 +390,13 @@ footer li {
 }
 
 @media screen and (max-width: 600px) {
-   .side-bar {
+  .side-bar {
     display: none;
   }
 
   main {
     margin: 5px 0 15px 0;
-  }  
+  }
 
   footer {
     padding: 10px 10px 5px 10px;
@@ -466,4 +487,3 @@ footer li {
     font-size: 7px;
   }
 }
-

@@ -124,7 +124,8 @@ h1 {
 /*----------------- ALERTAS ------------------*/
 
 .contenedorSuccess {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -139,7 +140,8 @@ h1 {
 }
 
 .contenedorWarning {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -153,7 +155,8 @@ h1 {
 }
 
 .contenedorError {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;

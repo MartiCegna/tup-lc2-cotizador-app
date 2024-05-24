@@ -1,611 +1,616 @@
 /*------------------MODAL ENVIAR DATOS-------------------*/
 
 .contenedorModal {
-    display: none; /* debo cambiar a "display: flex" para que se muestre la modal */
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #000000d2;
-    z-index: 100;
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la modal */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000d2;
+  z-index: 100;
 }
-  
+
 .modalEnviarDatos {
-    background-color: #65b6fc;
-    border: 1px solid #2778bf;
-    padding: 20px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 400px;
+  background-color: #65b6fc;
+  border: 1px solid #2778bf;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
 }
-  
+
 .modalEnviarDatos h2 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .formDatos {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px;
 }
-  
+
 .formDatos label {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
-  
+
 .formDatos input {
-    padding: 10px;
-    width: 70%;
-    border-radius: 5px;
-    border: 1px solid #929292;
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #929292;
 }
-  
+
 #nombre {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-  
+
 /*------------------INFORME-------------------*/
-  
+
 .flexInformes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .informes {
-    background-color: white;
-    border-radius: 30px;
-    border: 1px solid #2778bf;
-    padding: 20px;
-    font-size: 15px;
-    width: 100%;
-    display: grid;
-    grid-template-areas:
-      "h1 h1"
-      "selector grafico"
-      "compInfo grafico"
-      "tabla tabla";
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #2778bf;
+  padding: 20px;
+  font-size: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "selector grafico"
+    "compInfo grafico"
+    "tabla tabla";
 }
-  
+
 h1 {
-    grid-area: h1;
-    text-align: center;
+  grid-area: h1;
+  text-align: center;
 }
 
 .contenedorSelectBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .contenedorSelector {
-    grid-area: selector;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  grid-area: selector;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-  
+
 .selector {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: column wrap;
-    width:80%;
-    height: 100%;
-    background-color: #f3f3f3;
-    border: 1px solid #dfdfdf;
-    border-radius: 10px;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  width: 80%;
+  height: 100%;
+  background-color: #f3f3f3;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  padding: 10px;
 }
-  
+
 .selector label {
-    font-size: 15px;
-    margin: 0 0 10px 5px;
+  font-size: 15px;
+  margin: 0 0 10px 5px;
 }
-  
+
 .selector select {
-    background-color: #ffffff;
-    border: 1px solid #dfdfdf;
-    padding: 10px;
-    width: 80%;
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  padding: 10px;
+  width: 80%;
 }
-  
+
 .filtrar {
-    font-size: 30px;
-    border: none;
-    background-color: transparent;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
 }
-  
+
 .fa-filter {
-    cursor: pointer;
-    color: #ffb555;
-    margin-left: 10px;
+  cursor: pointer;
+  color: #ffb555;
+  margin-left: 10px;
 }
-  
+
 .compartirInfo {
-    grid-area: compInfo;
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-    color: #000;
+  grid-area: compInfo;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  color: #000;
 }
-  
+
 .fa-envelope-open-text {
-    font-size: 30px;
-    padding-right: 10px;
-    color: #2778bf;
+  font-size: 30px;
+  padding-right: 10px;
+  color: #2778bf;
 }
-  
+
 .grafico {
-    grid-area: grafico;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: grafico;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grafico img {
-    width: 500px;
-    height: 80%;
+  width: 500px;
+  height: 80%;
 }
-  
+
 .titulo {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
 }
-  
+
 .fa-print {
-    font-size: 25px;
-    color: #2778bf;
+  font-size: 25px;
+  color: #2778bf;
 }
-  
+
 .fa-eraser {
-    font-size: 20px;
-    color: #ffb555;
+  font-size: 20px;
+  color: #ffb555;
 }
-  
+
 .contenedorTabla {
-    grid-area: tabla;
-    width: 100%;
-    max-height: 800px;
-    overflow-y: auto;
-    border: 1px solid #2778bf;
-    border-radius: 20px;
+  grid-area: tabla;
+  width: 100%;
+  max-height: 800px;
+  overflow-y: auto;
+  border: 1px solid #2778bf;
+  border-radius: 20px;
 }
-  
+
 .tabla {
-    width: 100%;
-    border-radius: 20px;
-    background-color: #c7e0ff;
-    overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #c7e0ff;
+  overflow: hidden;
 }
-  
+
 th {
-    background-color: #c7e0ff;
-    position: sticky;
-    top: 0;
+  background-color: #c7e0ff;
+  position: sticky;
+  top: 0;
 }
-  
+
 th,
 td {
-    padding: 10px;
+  padding: 10px;
 }
-  
+
 .tituloTabla {
-    padding: 10px 10px 20px 10px;
+  padding: 10px 10px 20px 10px;
 }
-  
+
 .tabla tbody {
-    background-color: #fff;
-    border-radius: 10px;
+  background-color: #fff;
+  border-radius: 10px;
 }
-  
+
 .tabla tbody tr td {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
 }
 
 /*----------------- ALERTAS ------------------*/
 
 .contenedorSuccess {
-    display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 100;
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
 }
-  
+
 .cajaSuccess {
-    background-color: #28a745d8;
-    padding: 20px 40px;
-    border-radius: 30px;
-    color: #fff;
+  background-color: #28a745d8;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: #fff;
 }
-  
+
 .contenedorWarning {
-    display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 100;
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
 }
-  
+
 .cajaWarning {
-    background-color: #ffc107d8;
-    padding: 20px 40px;
-    border-radius: 30px;
+  background-color: #ffc107d8;
+  padding: 20px 40px;
+  border-radius: 30px;
 }
-  
+
 .contenedorError {
-    display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 100;
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
 }
-  
+
 .cajaError {
-    background-color: #dc3545d8;
-    padding: 20px 40px;
-    border-radius: 30px;
-    color: #fff;
+  background-color: #dc3545d8;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: #fff;
 }
 
 /*----------------- MEDIA ------------------*/
 
 @media screen and (max-width: 1524px) {
-    .grafico img {
-      width: 400px;
-      height: 80%;
-    }
+  .grafico img {
+    width: 400px;
+    height: 80%;
   }
-  
+}
+
 @media screen and (max-width: 1290px) {
-    h1 {
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
-  
-    .grafico img {
-      width: 300px;
-      height: 80%;
-    }
-  
-    .fa-envelope-open-text {
-      font-size: 25px;
-    }
-  
-    .compartirInfo {
-      font-size: 12px;
-    }
-  
-    .tabla {
-      font-size: 12px;
-    }
+  h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .grafico img {
+    width: 300px;
+    height: 80%;
+  }
+
+  .fa-envelope-open-text {
+    font-size: 25px;
+  }
+
+  .compartirInfo {
+    font-size: 12px;
+  }
+
+  .tabla {
+    font-size: 12px;
+  }
 }
-  
+
 @media screen and (max-width: 1245px) {
-    .cajaSuccess {
-      font-size: 12px;
-    }
-    .cajaWarning {
-      font-size: 12px;
-    }
-  
-    .cajaError {
-      font-size: 12px;
-    }
+  .cajaSuccess {
+    font-size: 12px;
+  }
+
+  .cajaWarning {
+    font-size: 12px;
+  }
+
+  .cajaError {
+    font-size: 12px;
+  }
 }
-  
+
 @media screen and (max-width: 1160px) {
-    .selector label {
-      font-size: 12px;
-    }
-  
-    .selector select {
-      font-size: 11px;
-    }
-  
-    .filtrar {
-      font-size: 25px;
-    }
+  .selector label {
+    font-size: 12px;
+  }
+
+  .selector select {
+    font-size: 11px;
+  }
+
+  .filtrar {
+    font-size: 25px;
+  }
 }
-  
+
 @media screen and (max-width: 1065px) {
-    .fa-envelope-open-text {
-      font-size: 20px;
-    }
-  
-    .compartirInfo {
-      font-size: 10px;
-    }
-  
-    .selector label {
-      font-size: 10px;
-    }
-  
-    .selector select {
-      font-size: 9px;
-    }
-  
-    .filtrar {
-      font-size: 20px;
-    }
-  
-    .tabla {
-      font-size: 10px;
-    }
+  .fa-envelope-open-text {
+    font-size: 20px;
+  }
+
+  .compartirInfo {
+    font-size: 10px;
+  }
+
+  .selector label {
+    font-size: 10px;
+  }
+
+  .selector select {
+    font-size: 9px;
+  }
+
+  .filtrar {
+    font-size: 20px;
+  }
+
+  .tabla {
+    font-size: 10px;
+  }
 }
-  
+
 @media screen and (max-width: 835px) {
-    .informes {
-      grid-template-areas:
-        "h1"
-        "selector"
-        "grafico"
-        "compInfo"
-        "tabla";
-    }
-  
-    .contenedorSelector {
-      justify-content: center;
-    }
-  
-    .selector {
-      align-items: center;
-      width: 100%;
-    }
-  
-    .selector label {
-      font-size: 15px;
-    }
-  
-    .selector select {
-      font-size: 12px;
-    }
-  
-    .filtrar {
-      font-size: 30px;
-    }
-  
-    .fa-envelope-open-text {
-      font-size: 30px;
-    }
-  
-    .compartirInfo {
-      font-size: 15px;
-    }
-  
-    .grafico img {
-      width: 450px;
-      height: 80%;
-    }
-  
-    .tabla {
-      font-size: 14px;
-    }
+  .informes {
+    grid-template-areas:
+      "h1"
+      "selector"
+      "grafico"
+      "compInfo"
+      "tabla";
+  }
+
+  .contenedorSelector {
+    justify-content: center;
+  }
+
+  .selector {
+    align-items: center;
+    width: 100%;
+  }
+
+  .selector label {
+    font-size: 15px;
+  }
+
+  .selector select {
+    font-size: 12px;
+  }
+
+  .filtrar {
+    font-size: 30px;
+  }
+
+  .fa-envelope-open-text {
+    font-size: 30px;
+  }
+
+  .compartirInfo {
+    font-size: 15px;
+  }
+
+  .grafico img {
+    width: 450px;
+    height: 80%;
+  }
+
+  .tabla {
+    font-size: 14px;
+  }
 }
-  
+
 @media screen and (max-width: 775px) {
-    .grafico img {
-      width: 350px;
-      height: 80%;
-    }
-  
-    .tabla {
-      font-size: 12px;
-    }
-  
-    .modalEnviarDatos {
-      max-width: 300px;
-    }
-  
-    .modalEnviarDatos h2 {
-      font-size: 18px;
-    }
-  
-    .formDatos label {
-      font-size: 13px;
-    }
-  
-    .formDatos input {
-      padding: 5px;
-      width: 90%;
-    }
+  .grafico img {
+    width: 350px;
+    height: 80%;
+  }
+
+  .tabla {
+    font-size: 12px;
+  }
+
+  .modalEnviarDatos {
+    max-width: 300px;
+  }
+
+  .modalEnviarDatos h2 {
+    font-size: 18px;
+  }
+
+  .formDatos label {
+    font-size: 13px;
+  }
+
+  .formDatos input {
+    padding: 5px;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .filtrar {
-      font-size: 25px;
-    }
-  
-    .fa-envelope-open-text {
-      font-size: 25px;
-    }
-  
-    .compartirInfo {
-      font-size: 12px;
-    }
-  
-    .grafico img {
-      width: 300px;
-      height: 80%;
-    }
-  
-    .tabla {
-      font-size: 10px;
-    }
-}
-  
-@media screen and (max-width: 600px) {
-    .fa-envelope-open-text {
-      font-size: 30px;
-    }
-  
-    .compartirInfo {
-      font-size: 15px;
-    }
-  
-    .grafico img {
-      width: 400px;
-      height: 80%;
-    }
-  
-    .tabla {
-      font-size: 15px;
-    }
-}
-  
-@media screen and (max-width: 540px) {
-    h1 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-  
-    .fa-envelope-open-text {
-      font-size: 25px;
-    }
-  
-    .compartirInfo {
-      font-size: 12px;
-    }
-  
-    .grafico img {
-      width: 350px;
-      height: 80%;
-    }
-  
-    .tabla {
-      font-size: 12px;
-    }
-    
-    .modalEnviarDatos {
-      max-width: 300px;
-    }
-  
-    .modalEnviarDatos h2 {
-      font-size: 15px;
-    }
-  
-    .formDatos label {
-      font-size: 12px;
-    }
-  
-    .formDatos input {
-      padding: 5px;
-      width: 90%;
-    }
-}
-  
-@media screen and (max-width: 450px) {
-    h1 {
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
-  
-    .selector {
-      align-items: center;
-      width: 100%;
-      height: 70px;
-    }
-  
-    .selector label {
-      font-size: 12px;
-    }
-  
-    .selector select {
-      font-size: 10px;
-    }
-  
-    .filtrar {
-      font-size: 25px;
-    }
-  
-    .fa-envelope-open-text {
-      font-size: 20px;
-    }
-  
-    .compartirInfo {
-      font-size: 10px;
-    }
-  
-    .grafico img {
-      width: 300px;
-      height: 80%;
-    }
-  
-    .tabla {
-      font-size: 10px;
-    }
-}
-  
-@media screen and (max-width: 420px) {
-    h1 {
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
-  
-    .selector {
-      align-items: center;
-      width: 100%;
-      height: 60px;
-    }
-  
-    .selector label {
-      font-size: 10px;
-    }
-  
-    .selector select {
-      font-size: 8px;
-    }
-  
-    .filtrar {
-      font-size: 20px;
-    }
-  
-    .fa-envelope-open-text {
-      font-size: 20px;
-    }
-  
-    .compartirInfo {
-      font-size: 10px;
-    }
-  
-    .grafico img {
-      width: 280px;
-      height: 80%;
-    }
-  
-    .tabla {
-      font-size: 8px;
-    }
+  .filtrar {
+    font-size: 25px;
   }
-  
+
+  .fa-envelope-open-text {
+    font-size: 25px;
+  }
+
+  .compartirInfo {
+    font-size: 12px;
+  }
+
+  .grafico img {
+    width: 300px;
+    height: 80%;
+  }
+
+  .tabla {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fa-envelope-open-text {
+    font-size: 30px;
+  }
+
+  .compartirInfo {
+    font-size: 15px;
+  }
+
+  .grafico img {
+    width: 400px;
+    height: 80%;
+  }
+
+  .tabla {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .fa-envelope-open-text {
+    font-size: 25px;
+  }
+
+  .compartirInfo {
+    font-size: 12px;
+  }
+
+  .grafico img {
+    width: 350px;
+    height: 80%;
+  }
+
+  .tabla {
+    font-size: 12px;
+  }
+
+  .modalEnviarDatos {
+    max-width: 300px;
+  }
+
+  .modalEnviarDatos h2 {
+    font-size: 15px;
+  }
+
+  .formDatos label {
+    font-size: 12px;
+  }
+
+  .formDatos input {
+    padding: 5px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .selector {
+    align-items: center;
+    width: 100%;
+    height: 70px;
+  }
+
+  .selector label {
+    font-size: 12px;
+  }
+
+  .selector select {
+    font-size: 10px;
+  }
+
+  .filtrar {
+    font-size: 25px;
+  }
+
+  .fa-envelope-open-text {
+    font-size: 20px;
+  }
+
+  .compartirInfo {
+    font-size: 10px;
+  }
+
+  .grafico img {
+    width: 300px;
+    height: 80%;
+  }
+
+  .tabla {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .selector {
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+
+  .selector label {
+    font-size: 10px;
+  }
+
+  .selector select {
+    font-size: 8px;
+  }
+
+  .filtrar {
+    font-size: 20px;
+  }
+
+  .fa-envelope-open-text {
+    font-size: 20px;
+  }
+
+  .compartirInfo {
+    font-size: 10px;
+  }
+
+  .grafico img {
+    width: 280px;
+    height: 80%;
+  }
+
+  .tabla {
+    font-size: 8px;
+  }
+}
+
 @media screen and (max-width: 400px) {
-    .modalEnviarDatos {
-      max-width: 250px;
-    }
-  
-    .modalEnviarDatos h2 {
-      font-size: 15px;
-    }
-  
-    .formDatos label {
-      font-size: 12px;
-    }
-  
-    .formDatos input {
-      padding: 5px;
-      width: 90%;
-    }
+  .modalEnviarDatos {
+    max-width: 250px;
+  }
+
+  .modalEnviarDatos h2 {
+    font-size: 15px;
+  }
+
+  .formDatos label {
+    font-size: 12px;
+  }
+
+  .formDatos input {
+    padding: 5px;
+    width: 90%;
+  }
 }

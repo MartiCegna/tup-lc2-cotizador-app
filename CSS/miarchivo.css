@@ -9,7 +9,7 @@
   align-items: center;
   flex-direction: column;
 }
-  
+
 .titulo {
   width: 100%;
   display: flex;
@@ -17,17 +17,17 @@
   align-items: center;
   margin-bottom: 10px;
 }
-  
+
 .fa-print {
   font-size: 25px;
   color: #2778bf;
 }
-  
+
 .fa-eraser {
   font-size: 20px;
   color: #ffb555;
 }
-  
+
 .contenedorTabla {
   width: 100%;
   max-height: 800px;
@@ -35,34 +35,34 @@
   border: 1px solid #2778bf;
   border-radius: 20px;
 }
-  
+
 .tabla {
   width: 100%;
   border-radius: 20px;
   background-color: #c7e0ff;
   overflow: hidden;
 }
-  
+
 th {
   background-color: #c7e0ff;
   position: sticky;
   top: 0;
 }
-  
+
 th,
 td {
   padding: 10px;
 }
-  
+
 .tituloTabla {
   padding: 10px 10px 20px 10px;
 }
-  
+
 .tabla tbody {
   background-color: #fff;
   border-radius: 10px;
 }
-  
+
 .tabla tbody tr td {
   background-color: #fff;
   text-align: center;
@@ -71,7 +71,8 @@ td {
 /*----------------- ALERTAS ------------------*/
 
 .contenedorSuccess {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -86,7 +87,8 @@ td {
 }
 
 .contenedorWarning {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -100,7 +102,8 @@ td {
 }
 
 .contenedorError {
-  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none;
+  /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -120,6 +123,7 @@ td {
   .cajaSuccess {
     font-size: 12px;
   }
+
   .cajaWarning {
     font-size: 12px;
   }
@@ -131,7 +135,8 @@ td {
 
 @media screen and (max-width: 780px) {
 
-  .titulo h1, .fa-print{
+  .titulo h1,
+  .fa-print {
     font-size: 25px;
   }
 
@@ -145,7 +150,8 @@ td {
     max-height: 500px;
   }
 
-  .titulo h1, .fa-print{
+  .titulo h1,
+  .fa-print {
     font-size: 20px;
   }
 
@@ -159,7 +165,8 @@ td {
     max-height: 800px;
   }
 
-  .titulo h1, .fa-print{
+  .titulo h1,
+  .fa-print {
     font-size: 30px;
   }
 
@@ -173,7 +180,8 @@ td {
     max-height: 500px;
   }
 
-  .titulo h1, .fa-print{
+  .titulo h1,
+  .fa-print {
     font-size: 25px;
   }
 
@@ -183,7 +191,9 @@ td {
 }
 
 @media screen and (max-width: 480px) {
-  .titulo h1, .fa-print{
+
+  .titulo h1,
+  .fa-print {
     font-size: 20px;
   }
 
@@ -193,7 +203,9 @@ td {
 }
 
 @media screen and (max-width: 445px) {
-  .titulo h1, .fa-print{
+
+  .titulo h1,
+  .fa-print {
     font-size: 20px;
   }
 

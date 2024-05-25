@@ -172,8 +172,7 @@
 /*----------------- ALERTAS ------------------*/
 
 .contenedorSuccess {
-  display: none;
-  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -188,8 +187,7 @@
 }
 
 .contenedorWarning {
-  display: none;
-  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -203,8 +201,7 @@
 }
 
 .contenedorError {
-  display: none;
-  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;

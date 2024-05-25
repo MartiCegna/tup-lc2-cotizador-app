@@ -71,8 +71,7 @@ td {
 /*----------------- ALERTAS ------------------*/
 
 .contenedorSuccess {
-  display: none;
-  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -102,8 +101,7 @@ td {
 }
 
 .contenedorError {
-  display: none;
-  /* debo cambiar a "display: flex" para que se muestre la alerta */
+  display: none; /* debo cambiar a "display: flex" para que se muestre la alerta */
   justify-content: center;
   align-items: center;
   position: absolute;

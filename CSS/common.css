@@ -18,7 +18,6 @@ body {
   background-color: beige;
 }
 
-
 /*------------------HEADER-------------------*/
 
 header {
@@ -46,8 +45,6 @@ div.contenedor {
   display: flex;
   min-height: 65.3vh;
 }
-
-
 
 /*-----------------SIDE BAR----------------*/
 .side-bar {

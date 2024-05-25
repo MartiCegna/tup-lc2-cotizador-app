@@ -1,8 +1,7 @@
 /*------------------MODAL ENVIAR DATOS-------------------*/
 
 .contenedorModal {
-  display: none;
-  /* debo cambiar a "display: flex" para que se muestre la modal */
+  display: none;/* debo cambiar a "display: flex" para que se muestre la modal */
   justify-content: center;
   align-items: center;
   position: fixed;

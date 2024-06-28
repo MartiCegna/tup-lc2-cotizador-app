@@ -7,30 +7,30 @@ const filtrar_pizarra = document.getElementById("filtrarPizarra");
 const pizzarra_cotz = document.getElementById("cotizaciones");
 const filtroPizarra = () => {
 
-  if (selector_moneda.value == "todas"){
+    if (selector_moneda.value == "todas") {
 
-  }
+    }
 }
 
-const procesoIniciado = async() => {
+const procesoIniciado = async () => {
 
-  const monedas = {
-    USD : "https://dolarapi.com/v1/dolares",
-    cotizaciones: "https://dolarapi.com/v1/cotizaciones"
+    const monedas = {
+        USD: "https://dolarapi.com/v1/dolares",
+        cotizaciones: "https://dolarapi.com/v1/cotizaciones"
 
-  }
+    }
 
     try {
-      const respuestaUSD = await fetch(monedas.USD)
-      const respuestaCotz = await fetch(monedas.cotizaciones)
-      if (respuestaUSD.ok){
-        const dataUSD = await respuestaUSD.json()
-        for (let i = 0; i < dataUSD.length; i++) {
-          
-          const cotz = document.createElement("div")
-          cotz.classList.add('cotizacion')
-          cotz.innerHTML = 
-          `
+        const respuestaUSD = await fetch(monedas.USD)
+        const respuestaCotz = await fetch(monedas.cotizaciones)
+        if (respuestaUSD.ok) {
+            const dataUSD = await respuestaUSD.json()
+            for (let i = 0; i < dataUSD.length; i++) {
+
+                const cotz = document.createElement("div")
+                cotz.classList.add('cotizacion')
+                cotz.innerHTML =
+                    `
           <div class="moneda">
              <p>${dataUSD[i].nombre}</p>
              <div class="compraventa">
@@ -48,17 +48,17 @@ const procesoIniciado = async() => {
              <i class="fa-solid fa-star pintada"></i>
            </button>
           `
-          pizzarra_cotz.appendChild(cotz)
-        
-       }
-      }
-      if (respuestaCotz.ok){
-        const dataCotz = await respuestaCotz.json()
-        for (let i = 0; i < dataCotz.length; i++) {
-          const cotz = document.createElement("div")
-          cotz.classList.add('cotizacion')
-          cotz.innerHTML = 
-          `
+                pizzarra_cotz.appendChild(cotz)
+
+            }
+        }
+        if (respuestaCotz.ok) {
+            const dataCotz = await respuestaCotz.json()
+            for (let i = 0; i < dataCotz.length; i++) {
+                const cotz = document.createElement("div")
+                cotz.classList.add('cotizacion')
+                cotz.innerHTML =
+                    `
           <div class="moneda">
              <p>${dataCotz[i].nombre}</p>
              <div class="compraventa">
@@ -76,21 +76,18 @@ const procesoIniciado = async() => {
              <i class="fa-solid fa-star pintada"></i>
            </button>
           `
-          pizzarra_cotz.appendChild(cotz)
-       }
-      }
-
+                pizzarra_cotz.appendChild(cotz)
+            }
+        }
     }
-    catch(error){
-      console.log(error)
+    catch (error) {
+        console.log(error)
     }
-
-    
 }
 procesoIniciado()
 
-setInterval(function(){
-  procesoIniciado()
+setInterval(function () {
+    procesoIniciado()
 }, 50000);
 
 
